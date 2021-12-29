@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en/lt">
+    <head>
+        <title>Nagrita | Nagų salonas</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Nail salon">
+        <meta name="description" content="Nails by Jurgita, nagų salonas, manikiūras, pedikiūras.">
+        <meta name="author" content="Tomas Staponkus">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+    <body class="grid_container">
+
+    <header id="logas" class="logas">
+        <p id="logo">Nagrita</p>
+        <p id="logo_right_side">| Nail Salon</p>
+    </header>
+        <nav id="header_nav">
+            <a href="#logas">Pradzia</a>
+            <a href="#artist_info">Apie mane</a>
+            <a href="#services">Paslaugos</a>
+            <a href="#artist_work">Atlikti darbai</a>
+            <a href="../EA/index.php">Rezervacija</a>
+            <a href="https://www.facebook.com/Nagu.ideju.studija.Nagrita/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/nails_by_jurga/" class="fa fa-instagram"></a>
+        </nav>
+        <main>
+
+            <article>
+
+                <section class="puslapio_aprasas">
+                    <p id="pradinis_aprasas">" Gražios moters įvaizdis sukuriamas iš detalių. Tačiau kaip dažnai pristinga
+                        laiko pačioms paprasčiausioms grožio procedūroms! O juk gražūs plaukai,
+                        nepriekaištingas manikiūras ir pedikiūras, lygi oda – tai svarbiausi gražios
+                        moters atributai. Skirti jiems keletą valandų per savaitę – ne taip jau daug, o
+                        rezultatas tikrai nenuvils. "</p>
+                </section>
+
+                <section id="artist_info" class="artist_info">
+                    <img id="profile_img" src="images/content_img/profile.jpg" alt="Jurgita Staponkiene">
+                    <p id="profile_describe">" Mano vardas Jurgita. Esu sertifikuota manikūristė. Kiekvieną dieną mane lydi gera nuotaika ir atsidavimas
+                savo pomegiui, rankų ir kojų nagučių priežiūra ir estetinis dekoravimas. Idejų semiuosi iš aplinkos, socialinio
+                gyvenimo, kuris yra neatskiriamas šiuolaikinių žmonių gyvenimo dalis. Daug laiko praleidau mokyndamasi iš profesionalų
+                Ukrainoje. Ten ir gavau savo sertifikatus. Būsiu labai laiminga, jeigu turėsiu galimybę tvarkyti ir prižiūrėti
+                jūsų rankų ar kojų nagučius. "</p>
+                </section>
+
+                <section id="services" class="services">
+                    <ul id="manikiuras_list">
+                        <li><i onclick="sleptiRankos()" class="fa fa-times"></i></li>
+                        <li>Manikiūras,nago plokštelės stiprinimas bazė ir gelinis lakavimas</li>
+                        <li>Manikiūras ir nago plokštelės stiprinimas</li>
+                        <li>Gelinių nagų korekcija</li>
+                    </ul>
+                    <div>
+                        <img src="images/content_img/manikiuras.png" onclick="kviestiRankos()"  on="sleptiList()" alt="manikiūras">
+                        <p>Manikiūras</p>
+                    </div>
+                    <div>
+                        <img src="images/content_img/pedikiuras.png" onclick="kviestiPeda()" alt="pedikiūras">
+                        <p>Pedikiūras</p>
+                    </div>
+                    <ul id="pedikiuras_list">
+                        <li><i onclick="sleptiPeda()" class="fa fa-times"></i></li>
+                        <li>Pedikiūras,nago plokštelės stiprinimas bazė ir gelinis lakavimas</li>
+                        <li>Pedikiūras ir nago plokštelės stiprinimas</li>
+                        <li>Gelinių nagų korekcija</li>
+                    </ul>
+                </section>
+
+                <section id="artist_work" class="artist_work">
+
+                        <img src="images/content_img/photo1.png" onmouseout="grazintiImg(this)" onclick="didintiImg(this)" alt="Nails by Jurgita, nagų salonas, manikiūras, pedikiūras.">
+                        <img src="images/content_img/photo2.png" onmouseout="grazintiImg(this)" onclick="didintiImg(this)" alt="Nails by Jurgita, nagų salonas, manikiūras, pedikiūras.">
+                        <img src="images/content_img/photo3.png" onmouseout="grazintiImg(this)" onclick="didintiImg(this)" alt="Nails by Jurgita, nagų salonas, manikiūras, pedikiūras.">
+                        <img src="images/content_img/photo4.jpg" onmouseout="grazintiImg(this)" onclick="didintiImg(this)" alt="Nails by Jurgita, nagų salonas, manikiūras, pedikiūras.">
+                </section>
+            </article>
+        </main>
+    <footer id="nav_footer">
+        <p>Visos teises saugomos &copy; 2021</p>
+        <i class="fa fa-phone"></i>
+        <p>&nbsp;+370 655 59575</p>
+        <i class="fa fa-envelope"></i>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jurgitastaponkiene@gmail.com">&nbsp;Jurgita Staponkienė</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/nav_bar.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/services.js"></script>
+    </body>
+</html>
