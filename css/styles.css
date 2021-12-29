@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,600i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Great+Vibes&display=swap');
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: Serif;
+    scroll-behavior: smooth;
+}
+.grid_container {
+    background: linear-gradient(45deg, darkorchid, darkslategray);
+    height: 100%;
+    display: grid;
+    width:100%;
+    grid-template-columns: auto;
+    grid-template-rows: 11em 3.5em auto 10em;
+    grid-template-areas:
+
+    'log'
+    'nav'
+    'main'
+    'fo';
+}
+header {
+    grid-area: log;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    height:7em;
+    width:100%;
+}
+.logas {
+    padding-top: 10em;
+    margin-top: 4em;
+}
+#logo {
+    color: white;
+    margin-top: 3em;
+    font-size: 5em;
+    font-family: 'Arizonia', cursive;
+}
+#logo_right_side {
+    margin-top: 4.4em;
+    font-size: 3em;
+    color: white;
+}
+#header_nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    height:3.1em;
+    background-color:black;
+    position: fixed;
+    width:100%;
+    top: 0;
+    z-index: 100;
+}
+#header_nav a {
+    text-decoration: none;
+    padding: 1em 1em;
+    color:white;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+            'pradzia'
+            'profilis'
+            'paslaugos'
+            'darbai'
+}
+article {
+    height: 100%;
+    width: 100%;
+}
+.puslapio_aprasas {
+    grid-area: pradzia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    height: 30em;
+}
+#pradinis_aprasas {
+    letter-spacing: 0.05em;
+    font-style: italic;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    color:white;
+    width:35em;
+}
+.artist_info {
+    grid-area: profilis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    height:40em;
+    width:100%;
+}
+#profile_img {
+    width:14em;
+    height:14em;
+    border:0.3em solid white;
+    margin-left: 3em;
+    border-radius: 40em;
+}
+#profile_describe {
+    letter-spacing: 0.05em;
+    font-style: italic;
+    font-size: 1.5em;
+    width:50em;
+    padding-bottom: 1em;
+    color:white;
+    margin-left: 5em;
+}
+.services {
+    grid-area: paslaugos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+    font-size: 1.5em;
+    color:white;
+    height: 30em;
+}
+#services div img {
+    border-radius: 30%;
+    border:0.2em solid white;
+}
+#services div img:hover {
+    border-radius: 30%;
+    border:0.2em solid white;
+    box-shadow: 0.1em 0.1em 0.1em 0.2em grey;
+}
+.services .fa {
+    border-radius: 0.35em 0.35em;
+    box-shadow: 0.03em 0.03em 0.03em 0.03em grey;
+}
+#manikiuras_list {
+    opacity:0;
+    list-style: none;
+    text-align: left;
+    width:100%;
+    font-size: 0.9em;
+}
+#manikiuras_list  li{
+    margin-bottom: 0.3em;
+    text-decoration: underline;
+}
+#pedikiuras_list {
+    opacity:0;
+    list-style: none;
+    text-align: left;
+    width:100%;
+    font-size: 0.9em;
+}
+#pedikiuras_list  li{
+    margin-bottom: 0.3em;
+    text-decoration: underline;
+}
+.artist_work {
+    display: grid;
+    padding: 3em;
+    grid-gap: 1em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    grid-template-columns: repeat(4,15em);
+}
+.artist_work img {
+    width:14.8em;
+}
+.artist_work img:hover {
+    box-shadow: 0.1em 0.1em 1em 0.2em grey;
+}
+#nav_footer {
+    grid-area: fo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    z-index: 100;
+}
+#nav_footer p {
+    margin-right: 2em;
+}
+#nav_footer a {
+    text-decoration: none;
+    color:white;
+}
+#nav_footer a:hover {
+    text-decoration: none;
+    color:darkgray;
+}
+.fa {
+    font-size: 1em;
+    width: 1.2em;
+    height:1.1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .grid_container {
+        width: 50%;
+    }
+}
